@@ -13,7 +13,7 @@ class Glosor():
         pass
 
 def main():
-    wb = xlrd.open_workbook("/Users/atabak/Desktop/Programmering/Glosor/Excelfiles/ord.xlsx")
+    wb = xlrd.open_workbook(os.path.join(os.path.dirname(__file__), 'excelfiles', 'ord.xlsx'))
     sheets = wb.sheet_names()
     print("Hej! Följande sheets finns i excel-arket:")
     print("--------------------------------------------------")
