@@ -363,6 +363,6 @@ def right(window, clock, mouse_pos):
 
 if __name__ == '__main__':
     pygame.init()
-    path = "/Users/atabak/Desktop/Programmering/Glosor/Excelfiles/ord.xlsx"
+    path = os.path.join(os.path.dirname(__file__),"excelfiles","/ord.xlsx")
     wb = xlrd.open_workbook(path)
     menu()
